@@ -100,11 +100,11 @@ class CrowdMaskDetection:
         cv2.destroyAllWindows()
 
 # Paths to the cascade classifier and mask detection model
-face_cascade_path = r"C:\Users\Nelson V I\Documents\Python Learning\data\haarcascade_frontalface_alt2.xml"
-model_path = r"C:\Users\Nelson V I\Documents\Python Learning\data\mask_recog1.h5"
-data_folder = r"C:\Users\Nelson V I\Documents\Python Learning\data"  # Folder to save images
+face_cascade_path = r"\**\data\haarcascade_frontalface_alt2.xml"
+model_path = r"\**\data\mask_recog1.h5"
+data_folder = r"\**\data"  # Folder to save images
 
 # Initialize the system and run
 if __name__ == "__main__":
     mask_detector = CrowdMaskDetection(face_cascade_path, model_path, data_folder)
-    mask_detector.run()
+    mask_detector.run() ####
